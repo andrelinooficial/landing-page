@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrelino Lima</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="#home"><img src="assets/images/logotipo.png" alt="Logotipo Andrelino" class="logo-img"></a></div>
+            <ul class="nav-links" id="nav-links">
+                <li class="mobile-logo-item"><a href="#home"><img src="assets/images/logotipo.png" alt="Logotipo Andrelino" class="logo-img"></a></li>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#experiencia">Experiência</a></li>
+                <li><a href="javascript:void(0)" onclick="openContactModal()">Contato</a></li>
+                <li class="mobile-socials">
+                    <a href="https://github.com/seu-usuario" target="_blank" rel="noopener noreferrer"><i class="devicon-github-original"></i></a>
+                    <a href="https://github.com/andrelinooficial" target="_blank" rel="noopener noreferrer"><i class="devicon-github-original"></i></a>
+                    <a href="https://linkedin.com/in/seu-perfil" target="_blank" rel="noopener noreferrer"><i class="devicon-linkedin-plain"></i></a>
+                </li>
+            </ul>
+            <div class="social-links">
+                <a href="https://github.com/seu-usuario" target="_blank" rel="noopener noreferrer"><i class="devicon-github-original"></i></a>
+                <a href="https://github.com/andrelinooficial" target="_blank" rel="noopener noreferrer"><i class="devicon-github-original"></i></a>
+                <a href="https://linkedin.com/in/seu-perfil" target="_blank" rel="noopener noreferrer"><i class="devicon-linkedin-plain"></i></a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <div class="content-wrapper">
+        <main class="hero" id="home">
+            <img src="assets/images/perfil.png" alt="Foto de Perfil do Andrelino" class="profile-img">
+            <h1 class="hero-title">Desenvolvimento de <br>Aplicações <span class="gradient-text">Web</span></h1><br>
+            <p class="hero-description">Desenvolvedor de aplicações web focado em criar soluções modernas e eficientes. Tenho experiência prática com sistemas em produção e atuo junto à <a href="https://www.semcodar.com.br/" target="_blank" rel="noopener noreferrer">comunidade Sem Codar</a>, acompanhando tendências e boas práticas do desenvolvimento atual. Busco sempre entregar aplicações funcionais, com boa performance e foco em resultados e segurança.</p>
+            <div class="hero-buttons">
+                <a href="javascript:void(0)" onclick="openContactModal()" class="btn-contact">Entre em contato</a>
+                <a href="assets/cv.pdf" target="_blank" class="btn-cv">Download CV</a>
+            </div>
+            <div class="hero-experience">
+                <h3>TECNOLOGIAS QUE EU TRABALHO</h3>
+                <div class="tech-slider">
+                    <div class="tech-icons">
+                        <div class="tech-item">
+                            <i class="devicon-html5-plain"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="devicon-css3-plain"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="devicon-javascript-plain"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="devicon-git-plain"></i>
+                            <span>Git / Github</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="assets/icons/antigravity.svg" alt="Antigravity Icon">
+                            <span>Antigravity</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="devicon-supabase-plain"></i>
+                            <span>Supabase</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="devicon-postgresql-plain"></i>
+                            <span>Postgres</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="devicon-typescript-plain"></i>
+                            <span>TypeScript</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="devicon-tailwindcss-original"></i>
+                            <span>Tailwind CSS</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="devicon-react-original"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="devicon-figma-plain"></i>
+                            <span>Figma</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="devicon-vercel-original"></i>
+                            <span>Vercel</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="devicon-cloudflare-plain"></i>
+                            <span>Cloudflare</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <section class="projects" id="projetos">
+            <h3>MEUS PROJETOS EM DESTAQUE</h3>
+            <div class="projects-grid">
+                <!-- Card 1 -->
+                <div class="project-item">
+                    <div class="project-card" onclick="openModal('projeto1')">
+                        <img src="assets/images/projeto1.png" alt="Appdrive">
+                        <div class="project-text-overlay">
+                            <h4>Appdrive</h4>
+                            <p>Gestão de locadora de veículos.</p>
+                        </div>
+                        <div class="arrow-icon">↗</div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="project-item">
+                    <div class="project-card" onclick="openModal('projeto2')">
+                        <img src="assets/images/projeto2.png" alt="Mapos">
+                        <div class="project-text-overlay">
+                            <h4>Carta de CEP</h4>
+                            <p>Sistema de controle estatístico.</p>
+                        </div>
+                        <div class="arrow-icon">↗</div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="project-item">
+                    <div class="project-card" onclick="openModal('projeto3')">
+                        <img src="assets/images/projeto3.png" alt="Corpchat">
+                        <div class="project-text-overlay">
+                            <h4>App Diário Escola</h4>
+                            <p>Aplicativo para gestão de escolas.</p>
+                        </div>
+                        <div class="arrow-icon">↗</div>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all-container">
+                <a href="#" class="view-all-link">Ver todos os projetos -></a>
+            </div>
+        </section>
+
+        <section class="process" id="processo">
+            <h3>PROCESSO DE DESENVOLVIMENTO</h3>
+            <div class="process-container">
+                <div class="process-step">
+                    <div class="step-header">
+                    <img src="assets/icons/planejamento.svg" alt="Planejamento">
+                        <h4>01. Planejamento</h4>
+                    </div>
+                    <p>Definição de objetivos, levantamento de requisitos e criação de um cronograma estratégico para garantir que o projeto atenda exatamente às necessidades do negócio e do usuário final.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-header">
+                    <img src="assets/icons/design.svg" alt="Design">
+                        <h4>02. Design</h4>
+                    </div>
+                    <p>Desenvolvimento de wireframes e interfaces de alta fidelidade (UI) com foco total na experiência do usuário (UX), garantindo que a aplicação seja intuitiva, moderna e visualmente atraente.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-header">
+                    <img src="assets/icons/banco.svg" alt="Estrutura de banco de dados">
+                        <h4>03. Estrutura de banco de dados</h4>
+                    </div>
+                    <p>Modelagem e organização eficiente dos dados para garantir integridade, segurança e alta performance, preparando a aplicação para crescer de forma escalável e robusta.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-header">
+                    <img src="assets/icons/desenvolvimento.svg" alt="Desenvolvimento">
+                        <h4>04. Desenvolvimento</h4>
+                    </div>
+                    <p>Transformação do design em código limpo e eficiente, utilizando as tecnologias mais modernas do mercado com inteligência artificial para implementar funcionalidades complexas seguindo as melhores práticas.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-header">
+                    <img src="assets/icons/publicacao.svg" alt="Publicação">
+                        <h4>05. Publicação</h4>
+                    </div>
+                    <p>Configuração de servidores, automação de deploy e monitoramento inicial para garantir que o lançamento ocorra sem falhas e a aplicação esteja disponível e segura para os usuários.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <h2>Vamos desenvolver um projeto juntos?</h2>
+            <p>Minha responsabilidade é entregar soluções digitais que não apenas atendam, mas superem suas expectativas, com foco em qualidade, performance e um código limpo e sustentável.</p>
+            <a href="mailto:contato@andrelino.dev.br" class="footer-email">contato@andrelino.dev.br</a>
+            <div class="footer-socials">
+                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal para Projetos -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <div id="modal-body">
+                <!-- Conteúdo dinâmico via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para Contato -->
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeContactModal()">&times;</span>
+            <h2>Contato</h2>
+            <p style="color: #c4c4c4; margin-bottom: 20px; font-weight: 300;">Envie uma mensagem que eu te retorno em breve!</p>
+            <form class="contact-form">
+                <label for="name">NOME COMPLETO</label>
+                <input type="text" id="name" name="name" placeholder="Seu nome aqui" required>
+                <label for="email">E-MAIL</label>
+                <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                <label for="whatsapp">WHATSAPP</label>
+                <input type="tel" id="whatsapp" name="whatsapp" placeholder="(00) 00000-0000" required>
+                <label for="message">DEIXE A SUA MENSAGEM</label>
+                <textarea id="message" name="message" rows="4" placeholder="Como posso te ajudar?" required></textarea>
+                <button type="submit" class="btn-submit">Enviar Mensagem</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
